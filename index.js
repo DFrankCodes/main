@@ -9,7 +9,7 @@ header.onclick = function () {
 	nav.style.border = "1px solid var(--primcol)"
 	nav.style.borderTop = "none"
 }
-cMicon.onclick = function () {
+ cMicon.onclick = function () {
 	nav.style.height = "0"
 	cMicon.style.opacity = "0"
 	nav.style.boxShadow = "none"
@@ -375,12 +375,16 @@ let dMIcon = document.getElementById("dMIcon")
 
 function showMenu() {
 	aside.style.width = "100px"
+	sMIcon.style.opacity = "0"
 	sMIcon.style.display = "none"
+	hMIcon.style.opacity = "1"
 	hMIcon.style.display = "inline"
 }
 function hideMenu() {
 	aside.style.width = "0"
+	sMIcon.style.opacity = "1"
 	sMIcon.style.display = "inline"
+	hMIcon.style.opacity = "0"
 	hMIcon.style.display = "none"
 }
 function lightmode() {

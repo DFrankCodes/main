@@ -5,15 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calculator</title>
 	<link rel="stylesheet" href="index.css">
+	<script src="https://kit.fontawesome.com/5d82c5a1a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="menu">
-		<p id="showMenu" onclick="showMenu()">
-			=
-		</p>
-		<p id="hideMenu" onclick="hideMenu()">
-			X
-		</p>
+		<i class="fa-solid fa-bars" id="showMenu" onclick="showMenu()">
+		</i>
+		<i class="fa-solid fa-close" id="hideMenu" onclick="hideMenu()">
+		</i>
 	</div>
 	
 	<div class="main-content">
@@ -113,8 +112,8 @@
 				mode
 			</p>
 			<ul id="vtheme">
-				<li id="dMIcon" onclick="darkmode()">DM</li>
-				<li id="lMIcon" onclick="lightmode()">LM</li>
+				<li id="dMIcon" onclick="darkmode()"><i class="fa-solid fa-moon"></i></li>
+				<li id="lMIcon" onclick="lightmode()" class="fa-solid fa-sun"></li>
 			</ul>
 		</div>
 	</aside>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&family=Tangerine&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins;
 }
 #aside{
     height: 100%;
@@ -114,12 +113,13 @@ body{
     color: var(--numcol);
     position: relative;
     left: 25px;
+    font-size: 1.9rem;
 }
 #menu{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px 20px 0 0;
+    padding: 5px 20px 0 0;
     color: var(--numcol);
     font-size: 1.5rem;
 }
