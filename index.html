@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div id="menu">
+		<p id="showMenu" onclick="showMenu()">
+			=
+		</p>
+		<p id="hideMenu" onclick="hideMenu()">
+			X
+		</p>
+	</div>
+	
+	<div class="main-content">
+		<div class="calculator">
+			<div class="output">
+				<div class="head">
+					<p class="header">
+						ca<span id="focused-header">l</span>c( )
+					</p>
+					<p id='close'>
+						X
+					</p>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li id="stand">Standard</li>
+						<li id="sci">Scientific</li>
+						<li id="adv">Advanced</li>
+					</ul>
+				</nav>
+				<div class="display">
+					<input type="text" id="display" readonly>
+					<input type="text" id="rdisplay" readonly>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="input">
+				<div class="top-row">
+					<button id="clear" onclick="clearDisp()">C</button>
+					<button id="divide">÷</button>
+					<button id="mult">×</button>
+					<button id="del" onclick="del()">DEL</button>
+				</div>
+				<div class="side-row">
+					<button id="minus">-</button>
+					<button id="plus">+</button>
+					<button id="equal" onclick="calc()">=</button>
+					<button id="ans" onclick="ans()">Ans</button>
+				</div>
+				<div class="main-row">
+					<button id="1" onclick="input('1')">1</button>
+					<button id="2" onclick="input('2')">2</button>
+					<button id="3" onclick="input('3')">3</button>
+					<button id="4" onclick="input('4')">4</button>
+					<button id="5" onclick="input('5')">5</button>
+					<button id="6" onclick="input('6')">6</button>
+					<button id="7" onclick="input('7')">7</button>
+					<button id="8" onclick="input('8')">8</button>
+					<button id="9" onclick="input('9')">9</button>
+				</div>
+				<div class="bottom-row">
+					<button id="dynamic" onclick="pisent(disp.value)">%</button>
+					<button id="0" onclick="input('0')">0</button>
+					<button id="period" onclick="input('.')">.</button>
+				</div>
+			</div>
+		</div>
+		<div class="index-row">
+			<input onclick="indx(this.value)" readonly value="0">
+			<input onclick="indx(this.value)" readonly value="1">
+			<input onclick="indx(this.value)" readonly value="2">
+			<input onclick="indx(this.value)" readonly value="3">
+			<input onclick="indx(this.value)" readonly value="4">
+			<input onclick="indx(this.value)" readonly value="5">
+			<input onclick="indx(this.value)" readonly value="6">
+			<input onclick="indx(this.value)" readonly value="7">
+			<input onclick="indx(this.value)" readonly value="8">
+			<input onclick="indx(this.value)" readonly value="9">
+		</div>
+	</div>
+	
+	<aside id="aside">
+		<div class="head">
+			<p class="header">
+				ca<span id="focused-header">l</span>c( )
+			</p>
+			<p id='close'>
+				X
+			</p>
+		</div>
+		<div class="theme">
+			<p>
+				theme
+			</p>
+			<ul id="theme">
+				<li class="green" onclick="tgreen()"></li>
+				<li class="pink" onclick="tpink()"></li>
+				<li class="red" onclick="tred()"></li>
+				<li class="blue" onclick="tblue()"></li>
+				<li class="purple" onclick="tpurple()"></li>
+				<li class="white" onclick="twhite()"></li>
+				<li class="black" onclick="tblack()"></li>
+			</ul>
+		</div>
+		<div class="vtheme">
+			<p>
+				mode
+			</p>
+			<ul id="vtheme">
+				<li id="dMIcon" onclick="darkmode()">DM</li>
+				<li id="lMIcon" onclick="lightmode()">LM</li>
+			</ul>
+		</div>
+	</aside>
+
+	<script src="index.js"></script>
+</body>
+</html>
