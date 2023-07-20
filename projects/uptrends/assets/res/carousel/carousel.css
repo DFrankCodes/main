@@ -1,0 +1,221 @@
+/* line 8, /stdin */
+.scarousel {
+  width: 100%;
+  height: 18.75rem;
+  position: relative;
+  background-color: cyan;
+}
+
+/* line 14, /stdin */
+.scarousel > div,
+.scarousel button {
+  /* overflow-x: hidden;overflow-y: hidden; */
+  background-color: transparent;
+}
+
+/* line 20, /stdin */
+.scarousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3125rem;
+  padding: 0.625rem;
+}
+
+/* line 29, /stdin */
+.scarousel-indicators button {
+  width: 0.9375rem;
+  height: 0.15625rem;
+  background: #9a9a9a;
+  transition: 0.3s all ease-in-out;
+}
+
+/* line 34, /stdin */
+.scarousel-indicators button.active {
+  background: #fafafa;
+}
+
+/* line 39, /stdin */
+.scarousel-inner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow-x: hidden;
+}
+
+/* line 45, /stdin */
+.scarousel-inner .scarousel-item {
+  display: flex;
+  padding: 1.875rem;
+  transition: 0.3s all ease;
+}
+
+/* line 50, /stdin */
+.scarousel-inner .scarousel-item.active {
+  display: flex;
+}
+
+/* line 55, /stdin */
+.scarousel-control-prev {
+  left: 0;
+}
+
+/* line 58, /stdin */
+.scarousel-control-next {
+  right: 0;
+}
+
+/* line 61, /stdin */
+.scarousel-control-prev,
+.scarousel-control-next {
+  position: absolute;
+  top: 0;
+  width: max-content;
+  height: 100%;
+  color: #fafafa;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 0 0.625rem;
+}
+
+/* line 72, /stdin */
+.fcarousel {
+  width: 100vw;
+  height: 18.75rem;
+  position: relative;
+  background-color: cyan;
+}
+
+/* line 78, /stdin */
+.fcarousel > div,
+.fcarousel button {
+  /* overflow-x: hidden;overflow-y: hidden; */
+  background-color: transparent;
+}
+
+/* line 84, /stdin */
+.fcarousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3125rem;
+  padding: 0.625rem;
+}
+
+/* line 93, /stdin */
+.fcarousel-indicators button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: #9a9a9a;
+  transition: 0.3s all ease-in-out;
+}
+
+/* line 99, /stdin */
+.fcarousel-indicators button.active {
+  background: #fafafa;
+}
+
+/* line 104, /stdin */
+.fcarousel-inner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  overflow-x: hidden;
+}
+
+/* line 110, /stdin */
+.fcarousel-inner .fcarousel-item {
+  padding: 1.875rem;
+  display: none;
+  opacity: 0;
+  transition: 0.75s all ease;
+}
+
+/* line 116, /stdin */
+.fcarousel-inner .fcarousel-item.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* line 122, /stdin */
+.fcarousel-control-prev {
+  left: 0;
+}
+
+/* line 125, /stdin */
+.fcarousel-control-next {
+  right: 0;
+}
+
+/* line 128, /stdin */
+.fcarousel-control-prev,
+.fcarousel-control-next {
+  position: absolute;
+  top: 0;
+  width: max-content;
+  height: 100%;
+  color: #fafafa;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 0 0.625rem;
+}
+
+/* line 139, /stdin */
+.mcarousel {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  display: flex;
+}
+
+/* line 145, /stdin */
+.mcarousel-inner {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.mcarousel-inner .mcarousel-item {
+  display: inline-block;
+}
+
+/* line 159, /stdin */
+.mcarousel-control-prev {
+  left: 0;
+}
+
+/* line 162, /stdin */
+.mcarousel-control-next {
+  right: 0;
+}
+
+/* line 165, /stdin */
+.mcarousel-control-prev,
+.mcarousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fafafa;
+  font-weight: 900;
+  font-size: 1.5rem;
+}

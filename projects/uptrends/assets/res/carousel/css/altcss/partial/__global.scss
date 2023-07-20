@@ -1,0 +1,119 @@
+//--ignore-compile
+
+@mixin globals {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: fontsize(md);
+      font-weight: normal;
+    }
+
+    a {
+      @include transition(all);
+    }
+    a,
+    a:hover {
+      color: $ctacol;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $primcol;
+    }
+    ul {
+      list-style: none !important;
+    }
+    img {
+      @include size($s: 100%);
+    }
+    svg,
+    i {
+      font-size: 24px !important;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      border: none;
+      font-family: Newsreader;
+      &:focus,
+      &:hover {
+        outline: none;
+      }
+    }
+
+    .cta {
+      @include size(100px, 35px);
+      button {
+        @include size($s: 100%);
+        font-weight: bold;
+        font-size: fontsize(sm);
+        font-family: Ubuntu;
+        color: $seccol;
+        background-color: $ctacol;
+        border-radius: 5px;
+        padding: 5px;
+        @include transition(all);
+
+        &:hover {
+          background-color: $seccol;
+          color: $primcol !important;
+          box-shadow: $boxShadow;
+        }
+      }
+    }
+    @include ctalines();
+    .hidden {
+      display: none !important;
+    }
+    .form-control {
+      @include size($s: 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      input,
+      textarea,
+      select,
+      button {
+        &.form-control-input {
+          @include size($s: 100%);
+          padding: 10px;
+          padding-right: 0;
+          border-radius: 5px;
+
+          &:focus {
+            border: 1px solid $ctacol;
+            box-shadow: $boxShadow;
+          }
+        }
+      }
+
+      &-cta {
+        @include flexCenter(row, false, true, true);
+        justify-content: flex-start;
+      }
+    }
+    .sticky {
+      position: -webkit-sticky !important;
+      position: sticky !important;
+      top: 0 !important;
+    }
+
+    .outline {
+      &,
+      * {
+        outline: 1px dashed red;
+      }
+    }
+  }
+}

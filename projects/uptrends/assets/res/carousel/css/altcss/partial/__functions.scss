@@ -1,0 +1,7 @@
+//--ignore-compile
+@function fontsize($size) {
+  @return map-get($fontsize, $size);
+}
+@function rem($px) {
+  @return #{$px/16px}rem;
+}

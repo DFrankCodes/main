@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>mcarousels</title>
+    <link
+      rel="stylesheet"
+      href="css/css/carousel.css"
+      type="text/css"
+      media="all"
+    />
+    <script defer src="carousel.js" type="module" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>This is the header</header>
+      <hr />
+      <main>
+        <div id="cards" class="scarousel cards">
+          <div class="scarousel-indicators">
+            <button
+              type="button"
+              data-cs-target="#cards"
+              data-cs-slide-to="0"
+              class="scarousel-indicator active"
+            ></button>
+            <button
+              type="button"
+              data-cs-target="#cards"
+              data-cs-slide-to="1"
+              class="scarousel-indicator"
+            ></button>
+            <button
+              type="button"
+              data-cs-target="#cards"
+              data-cs-slide-to="2"
+              class="scarousel-indicator"
+            ></button>
+          </div>
+          <div class="scarousel-inner">
+            <div class="scarousel-item active">
+              <h1>Card1</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+                voluptas!
+              </p>
+            </div>
+            <div class="scarousel-item">
+              <h1>Card2</h1>
+              <p>
+                Aspernatur ea corporis non hic fugit fugiat nulla animi error?
+              </p>
+            </div>
+            <div class="scarousel-item">
+              <h1>Card3</h1>
+              <p>
+                Debitis enim ipsam velit, pariatur neque itaque reprehenderit!
+                Assumenda, dignissimos?
+              </p>
+            </div>
+          </div>
+          <button
+            class="scarousel-control-prev"
+            type="button"
+            data-cs-target="#cards"
+            data-cs-slide="prev"
+          >
+            <span class="scarousel-control-prev-icon">&lt;</span>
+          </button>
+          <button
+            class="scarousel-control-next"
+            type="button"
+            data-cs-target="#cards"
+            data-cs-slide="next"
+          >
+            <span class="scarousel-control-next-icon">&gt;</span>
+          </button>
+        </div>
+        <div id="cards" class="fcarousel cards">
+          <div class="fcarousel-indicators">
+            <button
+              type="button"
+              data-cs-target="#cards"
+              data-cs-slide-to="0"
+              class="fcarousel-indicator active"
+            ></button>
+            <button
+              type="button"
+              data-cs-target="#cards"
+              data-cs-slide-to="1"
+              class="fcarousel-indicator"
+            ></button>
+            <button
+              type="button"
+              data-cs-target="#cards"
+              data-cs-slide-to="2"
+              class="fcarousel-indicator"
+            ></button>
+          </div>
+          <div class="fcarousel-inner">
+            <div class="fcarousel-item active">
+              <h1>Card1</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+                voluptas!
+              </p>
+            </div>
+            <div class="fcarousel-item">
+              <h1>Card2</h1>
+              <p>
+                Aspernatur ea corporis non hic fugit fugiat nulla animi error?
+              </p>
+            </div>
+            <div class="fcarousel-item">
+              <h1>Card3</h1>
+              <p>
+                Debitis enim ipsam velit, pariatur neque itaque reprehenderit!
+                Assumenda, dignissimos?
+              </p>
+            </div>
+          </div>
+          <button
+            class="fcarousel-control-prev"
+            type="button"
+            data-cs-target="#cards"
+            data-cs-slide="prev"
+          >
+            <span class="fcarousel-control-prev-icon">&lt;</span>
+          </button>
+          <button
+            class="fcarousel-control-next"
+            type="button"
+            data-cs-target="#cards"
+            data-cs-slide="next"
+          >
+            <span class="fcarousel-control-next-icon">&gt;</span>
+          </button>
+        </div>
+        <div id="cards" class="mcarousel cards">
+          <div class="mcarousel-inner">
+            <div class="mcarousel-item active">
+              <h1>Card1</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+                voluptas!
+              </p>
+            </div>
+            <div class="mcarousel-item">
+              <h1>Card2</h1>
+              <p>
+                Aspernatur ea corporis non hic fugit fugiat nulla animi error?
+              </p>
+            </div>
+            <div class="mcarousel-item">
+              <h1>Card3</h1>
+              <p>
+                Debitis enim ipsam velit, pariatur neque itaque reprehenderit!
+                Assumenda, dignissimos?
+              </p>
+            </div>
+          </div>
+          <button
+            class="mcarousel-control-prev"
+            type="button"
+            data-cs-target="#cards"
+            data-cs-slide="prev"
+          >
+            <span class="mcarousel-control-prev-icon">&lt;</span>
+          </button>
+          <button
+            class="mcarousel-control-next"
+            type="button"
+            data-cs-target="#cards"
+            data-cs-slide="next"
+          >
+            <span class="mcarousel-control-next-icon">&gt;</span>
+          </button>
+        </div>
+      </main>
+      <hr />
+      <footer>scarousel Component </footer>
+    </div>
+  </body>
+</html>

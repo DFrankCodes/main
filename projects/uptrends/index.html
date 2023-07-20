@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Uptrends</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	<link
+	rel="stylesheet"
+	type="text/css"
+	href="assets/res/fontawesome/css/all.min.css"
+	/>
+	<link
+	rel="stylesheet"
+	type="text/css"
+	href="assets/res/carousel/carousel.css"
+	/>
+	<link rel="icon" type="image/x-icon" href="assets/img/altlogo.png" />
+	<script
+		src="assets/res/carousel/carousel.js"
+		type="module"
+		charset="utf-8"
+		></script>
+	<script src="assets/js/main.js" type="module" charset="utf-8"></script>
+</head>
+<body>
+	<!-- FAKE LOADING SCREEN FLS] -->
+	<div class="wait-screen">
+		<div class="spinner">
+			<div class="spinner-img img">
+				<img src="assets/img/site/favicon.png" alt="" />
+			</div>
+			<p class="counter">
+				LOADING <span id="counterVar"></span>...
+			</p>
+			<div class="circlesCont">
+				<div class="circles"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END OF FLS -->
+	<header>
+		<a href="/" class="logo">
+			<img
+			src="assets/img/site/alt-logo.png"
+			alt="company logo"
+			width="125px"
+			/>
+		</a>
+		<div>
+			<ul id="navbar">
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li class='cart'>
+					<i class="fa-solid fa-shopping-cart" aria-hidden="true">
+					</i>
+					<span class="items"></span>
+					<div class="tooltip">
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">
+							<div class="tooltip-head">
+								<h3>Cart</h3>
+								<i class="fa-solid fa-x" data-class="tooltip-close"></i>
+							</div>
+							<div class="tooltip-body">
+							</div>
+							<div class="tooltip-foot">
+								<button type="button" data-class="tooltip-close">Close</button><button class="checkout" type="button">Checkout</button>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section id="hero">
+		<div class="hero-bg img">
+			<img src="assets/img/bg/store_background.jpg" alt="Store" />
+		</div>
+		<div class="htext1">
+			<ul>
+				<h2 class="htext">FLASH SALES</h2>
+				<p>
+					Everyday Deals, don't miss it.
+				</p>
+				<button class="normal">Shop Now</button>
+			</ul>
+		</div>
+		<div class="htext2">
+			<ul>
+				<h2 class="htext">Get Gadgets on Budget</h2>
+				<p>
+					Uptrends! covers for you.
+				</p>
+				<button class="normal">Shop Now</button>
+			</ul>
+		</div>
+		<div class="htext3">
+			<ul>
+				<h2 class="htext">Pay on Delivery</h2>
+				<p>
+					For Large items in Festac.
+				</p>
+				<button class="normal">Shop Now</button>
+			</ul>
+		</div>
+	</section>
+	<section id="features" class="section-p1">
+		<div class="smfbox">
+			<img src="assets/img/features/f (5).jpg" alt="" />
+			<h6>Free Delivery</h6>
+		</div>
+		<div class="smfbox">
+			<img src="assets/img/features/f (2).jpg" alt="" />
+			<br />
+			<p></p>
+			<br />
+			<h6>Online Order</h6>
+		</div>
+		<div class="smfbox">
+			<img src="assets/img/features/f (6).jpg" alt="" />
+			<br />
+			<p></p>
+			<h6>Save Money</h6>
+		</div>
+		<div class="smfbox">
+			<img src="assets/img/features/f (3).jpg" alt="" />
+			<br />
+			<p></p>
+			<br />
+			<h6>Sales Promo</h6>
+		</div>
+		<div class="smfbox">
+			<img src="assets/img/features/f (1).jpg" alt="" />
+			<h6>Happy Sell</h6>
+		</div>
+	</section>
+	<section id="featured" class="section-p1">
+		<h1>Featured Products</h1>
+		<h2>Flash Sales</h2>
+		<div class="mcarousel">
+			<div class="mcarousel-inner product-container">
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (1).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (2).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (3).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (4).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (5).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (6).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (7).jpeg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (8).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (9).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (10).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (11).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (12).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (13).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (14).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (15).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (16).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (17).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (18).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (19).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (20).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (21).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (22).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (23).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash (24).jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash 25.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash 26.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash 28.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash 29.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash 30.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+				<div class="mcarousel-item product">
+					<div class="img">
+						<img src="assets/img/flash sales/flash 31.jpg" alt="" />
+					</div>
+					<div class="desc">
+						<h6>Samsung Fridge</h6>
+						<span>Super Smart Multi-purpose Fridge</span>
+						<div class="star">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>
+							&#x20A6;<span>570,000.00</span>
+						</p>
+					</div>
+					<i class="fa-solid fa-shopping-cart" id='addBtn'></i>
+				</div>
+			</div>
+			<button
+				class="mcarousel-control-prev"
+				type="button"
+				data-cs-target="#cards"
+				data-cs-slide="prev"
+				>
+				<span class="mcarousel-control-prev-icon">&lt;</span>
+			</button>
+			<button
+				class="mcarousel-control-next"
+				type="button"
+				data-cs-target="#cards"
+				data-cs-slide="next"
+				>
+				<span class="mcarousel-control-next-icon">&gt;</span>
+			</button>
+		</div>
+	</section>
+</body>
+</html>

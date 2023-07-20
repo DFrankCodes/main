@@ -1,0 +1,104 @@
+//--ignore-compile
+@mixin breakpoint($size) {
+  @media screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include breakpoint(tablet) {
+    @content;
+  }
+}
+@mixin laptop {
+  @include breakpoint(laptop) {
+    @content;
+  }
+}
+
+@mixin getFont($font) {
+  @font-face {
+    font-family: $font;
+    src: url(../../res/fonts/#{$font}/#{$font}-Regular.ttf);
+  }
+}
+
+@mixin getOtherFont($font) {
+  @font-face {
+    font-family: $font;
+    src: url(../../res/fonts/other/#{$font}.ttf);
+  }
+}
+
+@mixin scrollbar {
+  @if (&) {
+    &::-webkit-scrollbar- {
+      &thumb,
+      &track {
+        width: 5px;
+        border-radius: 5px;
+        background-color: $ctacol;
+      }
+      &track {
+        background-color: $compcol;
+      }
+    }
+  }
+}
+
+@mixin size($w: null, $h: null, $s: null) {
+  width: $w;
+  height: $h;
+  @if ($s) {
+    width: $s;
+    height: $s;
+  }
+}
+
+@mixin flexCenter($dir: row, $h: true, $v: false, $c: false) {
+  display: flex;
+  flex-direction: $dir;
+  @if ($h) {
+    justify-content: center;
+  }
+  @if ($v) {
+    align-items: center;
+  }
+  @if ($c) {
+    align-content: center;
+  }
+}
+@mixin gridCenter($h: true, $v: true) {
+  display: grid;
+  @if ($h) {
+    place-items: center;
+  }
+  @if ($v) {
+    place-content: center;
+  }
+}
+@mixin transition($prop) {
+  transition: 0.3s $prop ease-in-out;
+}
+@mixin ctaline($pos) {
+    @include size($h: 5px);
+    @include flexCenter(column, false, true);
+    span {
+      @include size(50px, 100%);
+      background-color: $ctacol;
+      align-self: $pos;
+    }
+  }
+
+
+@mixin ctalines() {
+  .cta-line{
+    @include ctaline(center)
+  }
+  .cta-line-left{
+    @include ctaline(flex-start)
+  }
+  .cta-line-right{
+    @include ctaline(flex-end)
+  }
+}
