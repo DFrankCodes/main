@@ -1,0 +1,286 @@
+$black: #1c1c1c;
+$red: #d03e3e;
+$green: #00c65e;
+$dgreen: #498762;
+$yellow: #ffe026;
+$blue: #007fff;
+$grey: #aaaaaa;
+$white: #dedede;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+    transition: 0.3s all ease;
+
+    .isLoss {
+        color: $red;
+    }
+    .isProfit {
+        color: $green;
+    }
+    .isNone {
+        color: $yellow;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .infos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+
+        .error {
+            font-weight: bold;
+            color: $red;
+            font-style: italic;
+            text-align: center;
+        }
+        .status {
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    input {
+        background: transparent;
+
+        &[type="text"] {
+            width: 70px;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid $grey;
+
+            &:focus {
+                outline: none;
+                border-bottom: 2px solid lighten($white, 100%);
+            }
+            &::placeholder {
+                font-size: 18px;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+    }
+
+    buttons {
+        border: none;
+        border-radius: 3px;
+
+        &,
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    padding-bottom: 150px;
+    background: $black;
+    color: $white;
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+
+        .page-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            justify-content: center;
+
+            &-brand > h5 {
+                color: darken($green, 20%);
+                font-size: 16px;
+            }
+            &-title > h1 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .menu {
+        &-icon {
+            margin: 0 5px;
+            padding: 0 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        &-nav {
+            width: 100%;
+            height: 130px;
+            padding: 0 20px;
+            overflow: hidden;
+
+            &.closed {
+                height: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                padding: 10px;
+
+                li {
+                    width: 70%;
+                    font-weight: bold;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    transition: 0.3s color ease, 0.3s transform ease;
+
+                    &:hover {
+                        a {
+                            color: $green;
+                        }
+
+                        border-bottom: 1px solid $green;
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
+
+    .calculator {
+        width: 100%;
+        margin: 5px auto;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        border-top: 2px solid $white;
+
+        &-input {
+            #input-form {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+
+                .arbTypeDiv {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 30px;
+                    justify-content: center;
+
+                    > span {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                .odds {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 30px;
+                    justify-content: center;
+                }
+                .stake {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    input {
+                        width: 80%;
+                    }
+                }
+
+                .odds,
+                .stake {
+                    input {
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+
+                .submit-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        background: $blue;
+                        width: 50%;
+                        height: 40px;
+                        border: none;
+                        border-radius: 3px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            background: darken($blue, 20%);
+                        }
+                    }
+                }
+            }
+        }
+        &-output {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            .outputTable {
+                width: 100%;
+                overflow-x: scroll;
+
+                table {
+                    border: 0.5px solid $white;
+
+                    * {
+                        border: 0.5px solid $white;
+
+                        td,
+                        th {
+                            width: 70px;
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 10px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .compare {
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+}

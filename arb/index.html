@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Arb Calculator</title>
+	<link
+	rel="stylesheet"
+	href="css/main.css"
+	type="text/css"
+	media="all"
+	/>
+	<link rel="stylesheet" href="../res/fontawesome/css/all.css" type="text/css" media="all" />
+	<script src="../res/fontawesome/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="page-info">
+				<div class="page-info-brand">
+					<h5>OddsHub</h5>
+				</div>
+				<div class="page-info-title">
+					<h1>Arbitrage Calculator</h1>
+				</div>
+			</div>
+			<div class="menu-icon">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</header>
+		<div class="menu-nav closed">
+			<ul>
+				<li>
+					<a
+						href="https://chat.whatsapp.com/BhlpYznDhxV4YGVhAOMren"
+						>What's Arbitrage Betting</a
+					>
+				</li>
+				<li><a href="#">Arbitrage Calculator</a></li>
+				<li>
+					<a href="https://wa.me/2349140223502">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+		<div class="calculator">
+			<div class="calculator-input">
+				<form id="input-form">
+					<div class="arbTypeDiv">
+						<span>
+							<span
+								><input
+								type="radio"
+								name="arbTypeRadios"
+								value="2"
+								id="arbTypeRadios"
+								checked
+								/></span>
+							<span>
+								<span class="arbTypeLabel">2 Way</span>
+							</span>
+						</span>
+						<span>
+							<span
+								><input
+								type="radio"
+								name="arbTypeRadios"
+								value="3"
+								id="arbTypeRadios"
+								/></span>
+							<span>
+								<span class="arbTypeLabel">3 Way</span>
+							</span>
+						</span>
+					</div>
+
+					<div id="arbType" class="odds">
+						<span class="odd"
+							><input
+							type="text"
+							name="odd1"
+							placeholder="Odd 1"
+							id="odd1"
+							/></span>
+						<span class="odd"
+							><input
+							type="text"
+							name="odd2"
+							placeholder="Odd 2"
+							id="odd2"
+							/></span>
+					</div>
+					<div class="stake">
+						<input
+						type="text"
+						name="stake"
+						placeholder="Stake"
+						id="stake"
+						/>
+					</div>
+					<div class="submit-btn">
+						<button type="submit">Calculate</button>
+					</div>
+				</form>
+			</div>
+			<div class="calculator-output">
+				<div class="infos">
+					<p class="error"></p>
+					<p class="isLoss status"></p>
+				</div>
+				<div class="outputTable">
+					<table>
+						<thead>
+							<tr>
+								<th>S/N</th>
+								<th>Odd</th>
+								<th>should stake</th>
+								<th>will Return</th>
+								<th>Profit</th>
+							</tr>
+						</thead>
+						<tbody class="output">
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/utilities.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script src="js/arb.js" type="text/javascript" charset="utf-8"></script>
+	<script
+		src="js/arbChecker.js"
+		type="text/javascript"
+		charset="utf-8"
+		></script>
+	<script
+		src="js/main.js"
+		type="text/javascript"
+		charset="utf-8"
+		></script>
+	<script
+		src="js/view.js"
+		type="text/javascript"
+		charset="utf-8"
+		></script>
+	<script
+		src="js/menu.js"
+		type="text/javascript"
+		charset="utf-8"
+		></script>
+</body>
+</html>

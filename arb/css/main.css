@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #dedede;
+    transition: 0.3s all ease; }
+    * .isLoss {
+        color: #d03e3e; }
+    * .isProfit {
+        color: #00c65e; }
+    * .isNone {
+        color: #ffe026; }
+    * img {
+        width: 100%;
+        height: 100%; }
+    * .infos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center; }
+        * .infos .error {
+            font-weight: bold;
+            color: #d03e3e;
+            font-style: italic;
+            text-align: center; }
+        * .infos .status {
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center; }
+    * input {
+        background: transparent; }
+        * input[type="text"] {
+            width: 70px;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid #aaaaaa; }
+            * input[type="text"]:focus {
+                outline: none;
+                border-bottom: 2px solid white; }
+            * input[type="text"]::placeholder {
+                font-size: 18px;
+                font-style: italic;
+                text-align: center; }
+    * buttons {
+        border: none;
+        border-radius: 3px; }
+        * buttons, * buttons:hover, * buttons:focus {
+            outline: none; }
+    * ul {
+        list-style: none; }
+    * a {
+        text-decoration: none; }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    padding-bottom: 150px;
+    background: #1c1c1c;
+    color: #dedede; }
+    .container header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px; }
+        .container header .page-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            justify-content: center; }
+            .container header .page-info-brand > h5 {
+                color: #00602e;
+                font-size: 16px; }
+            .container header .page-info-title > h1 {
+                font-size: 24px; }
+    .container .menu-icon {
+        margin: 0 5px;
+        padding: 0 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 40px; }
+    .container .menu-nav {
+        width: 100%;
+        height: 130px;
+        padding: 0 20px;
+        overflow: hidden; }
+        .container .menu-nav.closed {
+            height: 0; }
+        .container .menu-nav ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 10px; }
+            .container .menu-nav ul li {
+                width: 70%;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: capitalize;
+                transition: 0.3s color ease, 0.3s transform ease; }
+                .container .menu-nav ul li:hover {
+                    border-bottom: 1px solid #00c65e;
+                    transform: translateX(10px); }
+                    .container .menu-nav ul li:hover a {
+                        color: #00c65e; }
+    .container .calculator {
+        width: 100%;
+        margin: 5px auto;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        border-top: 2px solid #dedede; }
+        .container .calculator-input #input-form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px; }
+            .container .calculator-input #input-form .arbTypeDiv {
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+                justify-content: center; }
+                .container .calculator-input #input-form .arbTypeDiv > span {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    font-size: 14px;
+                    font-weight: bold; }
+            .container .calculator-input #input-form .odds {
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+                justify-content: center; }
+            .container .calculator-input #input-form .stake {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                .container .calculator-input #input-form .stake input {
+                    width: 80%; }
+            .container .calculator-input #input-form .odds input,
+.container .calculator-input #input-form .stake input {
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center; }
+            .container .calculator-input #input-form .submit-btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                .container .calculator-input #input-form .submit-btn button {
+                    background: #007fff;
+                    width: 50%;
+                    height: 40px;
+                    border: none;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-transform: uppercase; }
+                    .container .calculator-input #input-form .submit-btn button:hover {
+                        background: #004c99; }
+        .container .calculator-output {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px; }
+            .container .calculator-output .outputTable {
+                width: 100%;
+                overflow-x: scroll; }
+                .container .calculator-output .outputTable table {
+                    border: 0.5px solid #dedede; }
+                    .container .calculator-output .outputTable table * {
+                        border: 0.5px solid #dedede; }
+                        .container .calculator-output .outputTable table * td,
+.container .calculator-output .outputTable table * th {
+                            width: 70px;
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 10px 5px; }
+    .container .compare {
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%; }
